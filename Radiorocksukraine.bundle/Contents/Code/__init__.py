@@ -2,7 +2,7 @@ ART = 'artlogo.jpg'
 ICON = 'icon-default.png'
 
 NAME = 'Radio ROKS Ukraine'
-NAME_AIR = 'ROKS (in Air)'
+NAME_AIR = 'ROKS (on the Air)'
 NAME_HARD = 'ROKS (Hard and Havy)'
 NAME_KAMTUGEZA = 'ROKS (KAMTUGEZA)'
 NAME_CONCERT = 'ROKS (Live Concert)'
