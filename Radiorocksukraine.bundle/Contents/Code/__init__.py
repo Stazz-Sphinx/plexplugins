@@ -2,20 +2,25 @@ ART = 'artlogo.jpg'
 ICON = 'icon-default.png'
 
 NAME = 'Radio ROKS Ukraine'
-NAME_AIR = 'ROKS (on the Air)'
+NAME_AIR = 'ROKS (on Air)'
 NAME_HARD = 'ROKS (Hard and Havy)'
 NAME_KAMTUGEZA = 'ROKS (KAMTUGEZA)'
 NAME_CONCERT = 'ROKS (Live Concert)'
 NAME_BEATLES = 'ROKS (Beatles)'
 NAME_BALLADS = 'ROKS (Rock-Ballads)'
-
+NAME_UKRROCK = 'ROKS (Ukraine ROCK)'
+NAME_NEWROCK = 'ROKS (NEW ROCK)'
+NAME_OE = 'ROKS (Okean Elzy) '
 
 STREAM_URL_AIR = 'http://online-radioroks.tavrmedia.ua/RadioROKS'
-STREAM_URL_HARD= 'http://online-radioroks2.tavrmedia.ua/RadioROKS_HardnHeavy'
-STREAM_URL_KAMTUGEZA= 'http://online-radioroks2.tavrmedia.ua/RadioROKS_KAMTUGEZA'
-STREAM_URL_CONCERT= 'http://online-radioroks2.tavrmedia.ua/RadioROKS_Concert'
-STREAM_URL_BEATLES= 'http://online-radioroks2.tavrmedia.ua/RadioROKS_Beatles'
-STREAM_URL_BALLADS= 'http://online-radioroks2.tavrmedia.ua/RadioROKS_Ballads'
+STREAM_URL_HARD = 'http://online-radioroks2.tavrmedia.ua/RadioROKS_HardnHeavy'
+STREAM_URL_KAMTUGEZA = 'http://online-radioroks2.tavrmedia.ua/RadioROKS_KAMTUGEZA'
+STREAM_URL_CONCERT = 'http://online-radioroks2.tavrmedia.ua/RadioROKS_Concert'
+STREAM_URL_BEATLES = 'http://online-radioroks2.tavrmedia.ua/RadioROKS_Beatles'
+STREAM_URL_BALLADS = 'http://online-radioroks2.tavrmedia.ua/RadioROKS_Ballads'
+STREAM_URL_UKRROCK = 'http://online-radioroks2.tavrmedia.ua/RadioROKS_Ukr'
+STREAM_URL_NEWROCK = 'http://online-radioroks2.tavrmedia.ua/RadioROKS_NewRock'
+STREAM_URL_OE = 'http://online-radioroks2.tavrmedia.ua:7000/RadioROKS_OE' 
 
 ####################################################################################################
 def Start():
@@ -29,12 +34,16 @@ def Start():
 def MainMenu():
 
 	oc = ObjectContainer()
+
 	oc.add(CreateTrackObject(url=STREAM_URL_AIR, title=NAME_AIR))
 	oc.add(CreateTrackObject(url=STREAM_URL_HARD, title=NAME_HARD))
 	oc.add(CreateTrackObject(url=STREAM_URL_KAMTUGEZA, title=NAME_KAMTUGEZA))
 	oc.add(CreateTrackObject(url=STREAM_URL_CONCERT, title=NAME_CONCERT))
 	oc.add(CreateTrackObject(url=STREAM_URL_BEATLES, title=NAME_BEATLES))
 	oc.add(CreateTrackObject(url=STREAM_URL_BALLADS, title=NAME_BALLADS))
+	oc.add(CreateTrackObject(url=STREAM_URL_UKRROCK, title=NAME_UKRROCK))
+	oc.add(CreateTrackObject(url=STREAM_URL_NEWROCK, title=NAME_NEWROCK))
+	oc.add(CreateTrackObject(url=STREAM_URL_OE, title=NAME_OE))
 
 	return oc
 
